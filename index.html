@@ -7,19 +7,21 @@
 
 <style>
 :root {
-    --primary: #0f172a;
-    --accent: #2563eb;
+    --dark-green: #0b3d20;
+    --green: #166534;
+    --green-light: #f0fdf4;
+    --green-accent: #15803d;
     --background: #f8fafc;
     --card: #ffffff;
     --text: #334155;
     --muted: #64748b;
-    --border: #e2e8f0;
+    --border: #d1d5db;
 }
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -30,19 +32,20 @@ body {
 }
 
 .header {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
+    background: linear-gradient(135deg, #0b3d20, #1f6b3a);
     color: white;
     text-align: center;
-    padding: 70px 20px;
+    padding: 80px 20px;
 }
 
 .header h1 {
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .header p {
-    color: #cbd5e1;
+    color: rgba(255,255,255,0.9);
     font-size: 1.1rem;
 }
 
@@ -54,33 +57,33 @@ body {
 
 .card {
     background: var(--card);
-    border-radius: 16px;
+    border-radius: 18px;
     padding: 50px;
     box-shadow: 0 12px 35px rgba(0,0,0,0.08);
 }
 
 .notice {
-    background: #eff6ff;
-    border-left: 6px solid var(--accent);
-    padding: 25px;
+    background: var(--green-light);
+    border-left: 6px solid var(--green-accent);
     border-radius: 12px;
+    padding: 25px;
     margin-bottom: 30px;
 }
 
 .notice h2 {
-    color: var(--primary);
+    color: var(--dark-green);
     margin-bottom: 10px;
     font-size: 1.5rem;
 }
 
 .card p {
-    margin-bottom: 20px;
     font-size: 1.05rem;
+    margin-bottom: 20px;
 }
 
 .contact {
     margin-top: 30px;
-    background: #f8fafc;
+    background: #fafafa;
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 25px;
@@ -90,14 +93,19 @@ body {
     margin-bottom: 12px;
 }
 
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
 .label {
     font-weight: 600;
-    color: var(--primary);
+    color: var(--dark-green);
 }
 
 a {
-    color: var(--accent);
+    color: var(--green-accent);
     text-decoration: none;
+    font-weight: 600;
 }
 
 a:hover {
@@ -107,22 +115,24 @@ a:hover {
 .footer {
     text-align: center;
     color: var(--muted);
-    font-size: 0.9rem;
     margin-top: 35px;
+    font-size: 0.9rem;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 20px;
 }
 
 @media (max-width: 768px) {
 
     .header {
-        padding: 50px 20px;
+        padding: 60px 20px;
     }
 
     .header h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .card {
-        padding: 30px 25px;
+        padding: 30px 24px;
     }
 
     .card p {
@@ -145,26 +155,48 @@ a:hover {
 
         <div class="notice">
             <h2>Oznámení obchodním partnerům</h2>
+
             <p>
                 Společnost ParadeGolf CZ s.r.o., IČO 213 83 600,
-                informuje své obchodní partnery a věřitele,
-                že probíhají kroky směřující k jejímu zrušení
-                a následnému vstupu do likvidace.
+                informuje své obchodní partnery a věřitele, že probíhají kroky
+                směřující k jejímu zrušení a následnému vstupu do likvidace.
             </p>
         </div>
 
         <p>
             Osoby, které vůči společnosti evidují pohledávky či jiné nároky,
-            žádáme o jejich oznámení prostřednictvím níže uvedených kontaktních údajů.
+            žádáme o jejich oznámení prostřednictvím datové schránky společnosti
+            nebo e-mailem na níže uvedené adrese.
         </p>
 
         <div class="contact">
 
             <div class="contact-item">
                 <span class="label">Datová schránka:</span>
-                cab248x
+                ID cab248x
             </div>
 
             <div class="contact-item">
                 <span class="label">E-mail:</span>
-     
+                <a href="mailto:info@paradegolf.com">
+                    info@paradegolf.com
+                </a>
+            </div>
+
+        </div>
+
+        <p style="margin-top:30px;">
+            Toto oznámení má informativní charakter a slouží k usnadnění komunikace
+            se společností v souvislosti s připravovanými korporátními změnami.
+        </p>
+
+        <div class="footer">
+            ParadeGolf CZ s.r.o. • IČO 213 83 600
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
